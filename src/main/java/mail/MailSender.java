@@ -38,7 +38,7 @@ public class MailSender {
             Message mess = new MimeMessage(s);
             mess.setFrom(new InternetAddress(email));
             mess.setRecipient(Message.RecipientType.TO, new InternetAddress(toAdr));
-            mess.setSubject("user password");
+            mess.setSubject("subject");
             mess.setText(String.valueOf(userPassword));
 
             // sending mail
